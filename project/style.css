@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px 0;
+    background-color: #f0f4f3;
+    color: #333333;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    width: 850px;
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+header {
+    height: 200px;
+    padding: 35px 15px;
+    text-align: center;
+    color: white;
+    background-image: url("images/tonga.jpg");
+    background-size: cover;
+    background-position: center;
+    background-origin: padding-box;
+    background-clip: border-box;
+    border-bottom: 5px solid #f2f2f1;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px #222222;
+}
+
+.tagline {
+    font-size: 17px;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px #222222;
+}
+
+nav {
+    padding: 15px;
+    text-align: center;
+    background-color: #263d35;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #be9e46;
+    color: #222222;
+}
+
+nav a:active {
+    background-color: white;
+    color: #263d35;
+}
+
+main {
+    padding: 25px 30px;
+    min-height: 430px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    text-align:center;
+    color: #263d35;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+figure {
+    float: left;
+    width: 260px;
+    margin: 0 22px 15px 0;
+    padding: 8px;
+    border: 2px solid #d5b879;
+    border-radius: 8px;
+    background-color: #faf8f2;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap: 15px;
+    justify-content: center;
+}
+
+.photo-grid figure {
+    width: 150px;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.photo-grid img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-grid figcaption {
+    font-size: 12px;
+    padding: 5px 0;
+}
+figcaption {
+    padding: 10px 2px 4px;
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+}
+
+blockquote {
+    clear: both;
+    margin: 25px 0;
+    padding: 20px;
+    border-left: 5px solid #b99b5b;
+    background-color: #f5f2e9;
+    color: #263d35;
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-style: italic;
+    line-height: 1.7;
+    border-radius: 5px;
+}
+
+.closing {
+    clear: both;
+    font-weight: 700;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-image: url("images/tonga.jpg");
+    background-size: cover;
+    background-position: center;
+    background-origin: padding-box;
+    background-clip: border-box;
+    border-top: 4px solid #fcfaf6;
+}
+
+footer p {
+    margin: 6px;
+    text-shadow: 1px 1px 3px #222222;
+}
+
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        padding: 25px 12px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        margin: 3px;
+        padding: 8px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    figure {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    figure img {
+        height: auto;
+        max-height: 200px;
+    }
+}

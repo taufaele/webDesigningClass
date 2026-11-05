@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', Time New Roman', serif;
+    font-size: 16px;
+    color: #263746;
+    background-color: #F1F7F8;
+    line-height: 2.1;
+    margin: 0;
+}
+
+   header {
+    background-image: url("beach.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+h1 {
+    font-size: 49px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:visited {
+    color: #000060;
+}
+
+nav a:hover {
+    color: #00ff51;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #164E63;
+    border-bottom: 2px solid #2A9D8F;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #164E63;
+    margin-top: 25px;
+}
+
+
+.color-answers {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+
+#top {
+    scroll-behavior: smooth;
+}
+
+.emphasis {
+    color: #008577;
+    font-weight: 700;
+}
+
+.deemphasis {
+    color: #00336c;
+}
+
+footer {
+    background-color: #008577;
+    color: rgb(242, 250, 244);
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #ebf3eb;
+}
+
+footer a:hover {
+    color: #80CBC4;
+}
