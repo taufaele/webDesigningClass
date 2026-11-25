@@ -1,51 +1,34 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Simple Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Form</title>
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
 
+    <h1>Contact Form</h1>
+
     <form>
-        <h2>My Form</h2>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-   
+        <fieldset>
+            <legend>Contact Information</legend>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="male">Male</label>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="female">Female</label>
-        <input type="radio" id="female" name="gender" value="female">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
 
-     
-        <label for="major">Major:</label>
-        <select id="major" name="major">
-            <option value="it">Information Technology</option>
-            <option value="cs">Computer Science</option>
-            <option value="construction">Construction</option>
-        </select>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
 
-      
-        <label for="skills">hardworking</label>
-         <input type="radio" id="hardworking" name="skills" value="hardworking">
-        <label for="skills">team work</label>
-        <input type="radio" id="teamwork" name="skills" value="teamwork">
-        <label for="skills">communication</label>
-        <input type="radio" id="communication" name="skills" value="communication">
-        <label for="skills">problem solving</label>
-        <input type="radio" id="problem-solving" name="skills" value="problem-solving">
-
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="3"></textarea>
-
-    
-        <button type="submit">Send</button>
+            <button type="submit">Submit</button>
+        </fieldset>
     </form>
 
 </body>
